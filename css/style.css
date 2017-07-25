@@ -1,9 +1,19 @@
+@font-face {
+  font-family: 'TimesNewRoman';
+  src: url(../fonts/TimesNewRomanRegular.ttf);
+}
+
+@font-face {
+  font-family: 'Arial';
+  src: url(../fonts/ArialCyr.ttf);
+}
+
 html,
 body {
   position: relative;
   margin: 0;
   padding: 0;
-  font-family: 'Lora', serif;
+  font-family: 'Times New Roman', 'PT Sans';
   z-index: 1;
 }
 
@@ -12,14 +22,15 @@ body {
 
 body {
   width: 100%;
+  max-width: 1920px;
   font-size: 1em;
   line-height: normal;
-  color: #333333;
+  color: #000000;
 }
 
 .container {
-  max-width: 1360px;
-  width: 90%;
+  max-width: 1820px;
+  width: 95%;
   margin: 0 auto;
 }
 
@@ -29,36 +40,300 @@ body {
   clear: both;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  text-transform: uppercase;
-  font-size: 1.4em;
-  color: #000000;
+.top-header,
+.section-border {
+  width: 100%;
+  height: 2.5em;
+  background: #7f2f45 url("../img/bg_line.jpg") repeat 0 0;
 }
 
-h4,
-h5,
-h6 {
+.middle-header {
+  position: relative;
+  margin: 1em auto 0 auto;
+  background: url("../img/top_r_line.png") no-repeat 100% 60%;
+}
+
+.header-title-box {
+  width: 100%;
+  max-width: 780px;
+  min-height: 5em;
+  padding: 1em 10%;
+  text-align: left;
+  background: url("../img/l_line.png") no-repeat 0 0;
+  background-size: contain;
+  box-sizing: border-box;
+  z-index: 11;
+}
+
+.header-title-box p {
+  text-transform: uppercase;
+}
+
+.middle-header::before,
+.middle-header::after {
+  position: absolute;
+  top: -1em;
+  display: block;
+  width: 15%;
+  height: 100%;
+  padding: 0.5em 0;
+  z-index: -1;
+  content: "";
+}
+
+.middle-header::before {
+  left: 0;
+  background-image: linear-gradient(to right, #e8e8e8, transparent);
+}
+
+.middle-header::after {
+  right: 0;
+  background-image: linear-gradient(to left, #e8e8e8, transparent);
+}
+
+.header-logo-box {
+  width: 100%;
+  margin-top: 1em;
+}
+
+.header-logo-box h1 {
+  font-size: 0;
+}
+
+.header-logo-box img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.header-contacts-box {
+  width: 100%;
+  max-width: 620px;
+  padding: 1em 0;
+  background:
+  background-size: contain;
+  box-sizing: border-box;
+}
+
+.contacts-box_lang {
+  text-align: right;
+  margin: 0 25%;
+}
+
+.contacts-box_lang a {
+  margin-bottom: 0.5em;
+  font-size: 1.2em;
+  color: #792830;
+  text-decoration: none;
+}
+
+.contacts-box_lang a:hover {
+  color: red;
+  border-bottom: 1px dotted red;
+}
+
+.contacts-box_search {
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+  margin: 0.5em auto;
+}
+
+.contacts-box_search input {
+  width: 100%;
+  height: 2em;
+  margin: 0.5em auto;
+  padding-left: 2em;
+  box-sizing: border-box;
+}
+
+.contacts-box_search span {
+  position: absolute;
+  top: 0.8em;
+  left: 0.5em;
+  width: 1.3em;
+  height: 1.3em;
+  background: url("../img/search_icon.png") no-repeat 0 0;
+  background-size: contain;
+}
+
+.box_contacts-phone,
+.box_contacts-mail {
+  display: block;
+  width: 100%;
+  margin: 0.3em 3.5em;;
+  position: relative;
+  padding-left: 2em;
+  text-decoration: none;
+  color: #000000;
   font-size: 1.1em;
 }
 
-.cols.col-1,
-.cols.col-2,
-.cols.col-3,
-.cols.col-4,
-.cols.col-5,
-.cols.col-6,
-.cols.col-7,
-.cols.col-8,
-.cols.col-9,
-.cols.col-10,
-.cols.col-11,
-.cols.col-12 {
+.box_contacts-phone span {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 1.6em;
+  height: 1.6em;
+  background: url("../img/phone_icon.png") no-repeat 0 0;
+  background-size: contain;
+}
+
+.box_contacts-mail span {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 1.6em;
+  height: 1.6em;
+  background: url("../img/mail_icon.png") no-repeat 0 0;
+  background-size: contain;
+}
+
+.bottom-header {
+  background-color: #a9a9a9;
+  padding: 1em;
+}
+
+.main-navigation ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-navigation li {
+  display: block;
+  width: 80%;
+  max-width: 300px;
+  margin: -2px auto 0 auto;
+  padding: 0.5em;
+  background-image: linear-gradient(to bottom, #ededed, #dfdfdd);
+  border: 2px solid #ffffff;
+}
+
+.main-navigation a {
+  display: block;
   width: 100%;
+  color: #792830;
+  font-size: 1.2em;
+  font-style: italic;
+  text-decoration: none;
+}
+
+.main-navigation li:hover {
+  margin: -2px -2% 0 auto;
+}
+
+.slider-box,
+.slider-menu {
+  display: block;
+  width: 90%;
+  margin: 1em auto;
+}
+
+.slide {
+  position: relative;
+  display: block;
+  width: 100%;
+  margin: 2em 0;
+  box-shadow: -0.5em 0.5em 0 0 #a9aaa3;
+}
+
+.slide p {
+  position: absolute;
+  top: 0;
+  left: 1em;
+  display: block;
+  width: 80%;
+  padding: 0.5em;
+  text-transform: uppercase;
+  font-size: 0.7em;
+  color: #ffffff;
+}
+
+.slide img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.slider-menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.slider-menu ul a {
+  display: block;
+  width: 100%;
+  max-width: 550px;
+  min-height: 3.7em;
+  margin: 1em 0;
+  padding: 0.7em 1.2em;
+  font-size: 1.2em;
+  font-style: italic;
+  font-weight: bold;
+  color: #000000;
+  text-align: center;
+  text-decoration: none;
+  background: url("../img/slider_menu.png") no-repeat 0 0;
+  background-size: contain;
+  box-sizing: border-box;
+}
+
+.section-title {
+  display: block;
+  width: 90%;
+  max-width: 786px;
+  min-height: 70px;
+  margin: 2em auto 1em auto;
+  padding: 1em;
+  text-align: center;
+  background: url("../img/title_bg.png") no-repeat 0 0;
+  background-size: cover;
+  box-sizing: border-box;
+}
+
+.section-title h2 {
+  font-style: italic;
+  margin: 0;
+}
+
+.mean .section-content p {
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+  font-size: 1.1em;
+  font-style: italic;
+  margin-bottom: 0;
+}
+
+.mean .section-content ul {
+  list-style: square;
+}
+
+.current-direction a {
+  display: block;
+  width: 80%;
+  max-width: 340px;
+  min-height: 130px;
+  margin: 2em auto;
+  padding: 1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 1.2em;
+  color: #000000;
+  box-sizing: border-box;
+  background-color: #a9a9ab;
+  border-radius: 5px;
+  box-shadow: -15px 15px 0 0 #7f2f45;
+}
+
+.current-direction a:hover {
+  color: #ffffff;
+  background-color: #7f2f45;
+  box-shadow: -15px 15px 0 0 #a9a9ab;
 }
 
 /*--------------------------------animation-----------------------------------*/
@@ -85,66 +360,47 @@ h6 {
 /*------------------------------index.html------------------------------------*/
 
 @media screen and (min-width: 768px) {
-  .cols.col-1 {
-    width: 8.3333%;
+  .header-title-box {
+    float:left;
+    width: 38%;
   }
 
-  .cols.col-2 {
-    width: 16.6666%;
+  .header-logo-box {
+    float: left;
+    width: 20%;
+    margin: 1em 2%;
   }
 
-  .cols.col-3 {
-    width: 24.9999%;
+  .header-contacts-box {
+    float: right;
+    width: 38%;
   }
 
-  .cols.col-4 {
-    width: 33.3332%;
+  .contacts-box_search {
+    width: 70%;
+    margin: 0 1.2em;
   }
-
-  .cols.col-5 {
-    width: 41.6665%;
-  }
-
-  .cols.col-6 {
-    width: 49.9998%;
-  }
-
-  .cols.col-7 {
-    width: 58.3331%;
-  }
-
-  .cols.col-8 {
-    width: 66.6664%;
-  }
-
-  .cols.col-9 {
-    width: 74.9997%;
-  }
-
-  .cols.col-10 {
-    width: 83.333%;
-  }
-
-  .cols.col-11 {
-    width: 91.663%;
-  }
-
-  .cols.col-12 {
-    width: 100%;
-  }
-
-
 }
-
 
 /*-------------------------Third - For Tablet 1024px--------------------------*/
 /*-------------------------------index.html-----------------------------------*/
 
 
 @media screen and (min-width: 1024px) {
+  .contacts-box_search {
+    width: 65%;
+    max-width: 420px;
+    margin: 0 10% 2em 10%;
+  }
 
+  .box_contacts-phone,
+  .box_contacts-mail {
+    font-size: 1.3em;
+    margin: 0.5em 0 0 2.5em;
+  }
 
 }
+
 
 
 /*-------------------------Third - For Tablet 1360px--------------------------*/
@@ -152,5 +408,17 @@ h6 {
 
 
 @media screen and (min-width: 1360px) {
+  .header-title-box p {
+    font-size: 1.2em;
+  }
+}
 
+/*-------------------------Third - For Tablet 1920px--------------------------*/
+/*-------------------------------index.html-----------------------------------*/
+
+
+@media screen and (min-width: 1920px) {
+  .header-title-box p {
+    font-size: 1.4em;
+  }
 }
