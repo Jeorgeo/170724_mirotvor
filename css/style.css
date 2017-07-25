@@ -1,0 +1,156 @@
+html,
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  font-family: 'Lora', serif;
+  z-index: 1;
+}
+
+/*--------------------------first - for mobile 320px--------------------------*/
+/*-----------------------------index.html-------------------------------------*/
+
+body {
+  width: 100%;
+  font-size: 1em;
+  line-height: normal;
+  color: #333333;
+}
+
+.container {
+  max-width: 1360px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: uppercase;
+  font-size: 1.4em;
+  color: #000000;
+}
+
+h4,
+h5,
+h6 {
+  font-size: 1.1em;
+}
+
+.cols.col-1,
+.cols.col-2,
+.cols.col-3,
+.cols.col-4,
+.cols.col-5,
+.cols.col-6,
+.cols.col-7,
+.cols.col-8,
+.cols.col-9,
+.cols.col-10,
+.cols.col-11,
+.cols.col-12 {
+  width: 100%;
+}
+
+/*--------------------------------animation-----------------------------------*/
+
+
+
+/*--------------------------------end of animation---------------------------*/
+
+
+
+/*-------------------------------arrow-up------------------------------------*/
+
+/*-------------------------------end of arrow-up------------------------------*/
+
+
+
+/*--------------------------------Modal-windows-------------------------------*/
+/*-------------------------------index.html-----------------------------------*/
+
+/*--------------------------------End of Modal-windows------------------------*/
+
+
+/*----------------------Second - For Tablet 768px-----------------------------*/
+/*------------------------------index.html------------------------------------*/
+
+@media screen and (min-width: 768px) {
+  .cols.col-1 {
+    width: 8.3333%;
+  }
+
+  .cols.col-2 {
+    width: 16.6666%;
+  }
+
+  .cols.col-3 {
+    width: 24.9999%;
+  }
+
+  .cols.col-4 {
+    width: 33.3332%;
+  }
+
+  .cols.col-5 {
+    width: 41.6665%;
+  }
+
+  .cols.col-6 {
+    width: 49.9998%;
+  }
+
+  .cols.col-7 {
+    width: 58.3331%;
+  }
+
+  .cols.col-8 {
+    width: 66.6664%;
+  }
+
+  .cols.col-9 {
+    width: 74.9997%;
+  }
+
+  .cols.col-10 {
+    width: 83.333%;
+  }
+
+  .cols.col-11 {
+    width: 91.663%;
+  }
+
+  .cols.col-12 {
+    width: 100%;
+  }
+
+
+}
+
+
+/*-------------------------Third - For Tablet 1024px--------------------------*/
+/*-------------------------------index.html-----------------------------------*/
+
+
+@media screen and (min-width: 1024px) {
+
+
+}
+
+
+/*-------------------------Third - For Tablet 1360px--------------------------*/
+/*-------------------------------index.html-----------------------------------*/
+
+
+@media screen and (min-width: 1360px) {
+
+}
