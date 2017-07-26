@@ -240,6 +240,14 @@ img {
   margin: 1em auto;
 }
 
+.owl-carousel .slide {
+  display: none;
+}
+
+.owl-carousel .slide:first-child {
+  display: block;
+}
+
 .slide {
   position: relative;
   display: block;
@@ -258,12 +266,6 @@ img {
   text-transform: uppercase;
   font-size: 0.65em;
   color: #ffffff;
-}
-
-.slide img {
-  display: block;
-  max-width: 100%;
-  height: auto;
 }
 
 .slider-menu ul {
@@ -370,9 +372,10 @@ img {
   max-width: 1170px;
   min-height: 70px;
   margin: 1em auto;
-  padding: 2em;
+  padding: 1.5em 1em 2.5em 1em;
   font-style: italic;
   background: url("../img/title_line.png") no-repeat 50% 0;
+  background-size: cover;
   z-index: 101;
 }
 
@@ -399,10 +402,15 @@ img {
   z-index: 105;
 }
 
+.medals-box {
+  padding-bottom: 2em;
+  background-image: linear-gradient(to top, #f0efef, #ffffff);
+}
+
 .medal {
   width: 90%;
   max-width: 300px;
-  margin: 1em auto;
+  margin: 1em auto 0 auto;
 }
 
 .medal p {
@@ -410,7 +418,103 @@ img {
   width: 90%;
   margin: 1em auto;
   text-align: center;
+  font-family: "Arial", serif;
 }
+
+.top-footer {
+  padding: 2em 0;
+  background-image: linear-gradient(to bottom, #f0efef, #ffffff);
+}
+
+.footer-copy-box {
+  width: 90%;
+  max-width: 520px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: "Arial", serif;
+}
+
+.footer-copy-box span {
+  font-family: "Arial", serif;
+  font-weight: bold;
+}
+
+.footer-copy-box a {
+  margin-bottom: 2em;
+  color: #000000;
+  text-decoration: none;
+  font-family: "Arial", serif;
+  font-weight: bold;
+}
+
+.footer-copy-box a:hover {
+  border-bottom: 1px solid #000000;
+}
+
+.footer-logo-box {
+  width: 90%;
+  margin: 2em auto;
+}
+
+.footer-contacts-box {
+  text-align: center;
+}
+
+.footer-contacts-box p {
+  font-family: "Arial", serif;
+  font-size: 1.2em;
+  font-style: italic;
+  color: #78233a;
+}
+
+.footer-contacts-box_contacts {
+  display: flex;
+  width: 100%;
+}
+
+.footer-contacts-box .box_contacts-phone,
+.footer-contacts-box .box_contacts-mail {
+    display: flex;
+    justify-content: space-around;
+    width: 45%;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-form {
+  text-align: center;
+}
+
+.footer-form input {
+  display: inline-block;
+  vertical-align: top;
+  width: 250px;
+  margin: 0.5em;
+  padding: 0.7em 2em;
+  font-family: "Arial", serif;
+  font-style: italic;
+  color: #78233a;
+  background-color: #dbdbdb;
+  border: 2px solid #78233a;
+  box-sizing: border-box;
+}
+
+.footer-form button {
+  display: block;
+  width: 250px;
+  margin: 0.5em auto;
+  padding: 0.7em 2em;
+  text-transform: uppercase;
+  font-family: "Arial", serif;
+  font-size: 1.1em;
+  font-style: italic;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #6c222e;
+  border: 2px solid #6c222e;
+  box-sizing: border-box;
+}
+
 
 
 
