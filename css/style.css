@@ -302,7 +302,26 @@ img {
   box-shadow: 1px 1px 2px 2px #a9aaa3;
 }
 
+.mean {
+  position: relative;
+  z-index: 100;
+  background: url("../img/bot_r_line.png") no-repeat 100% 150%;
+}
+
+.mean::after {
+  position: absolute;
+  top: -2em;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 80px;
+  background-image: linear-gradient(to bottom, #f3f3f3, transparent);
+  content: "";
+  z-index: 99;
+}
+
 .section-title {
+  position: relative;
   display: block;
   width: 90%;
   max-width: 786px;
@@ -313,6 +332,7 @@ img {
   background: url("../img/title_bg.png") no-repeat 0 0;
   background-size: cover;
   box-sizing: border-box;
+  z-index: 100;
 }
 
 .section-title h2 {
@@ -330,7 +350,32 @@ img {
 }
 
 .mean .section-content ul {
+  position: relative;
   list-style: square;
+  padding-bottom: 2em;
+  z-index: 100;
+}
+
+.mean .section-content ul::after,
+.scheme::before {
+  position: absolute;
+  left: -2em;
+  display: block;
+  width: 70%;
+  max-width: 1596px;
+  height: 15px;
+  transform: skew(-45deg);
+  background-color: #a9a9a9;
+  z-index: 99;
+  content: "";
+}
+
+.mean .section-content ul::after {
+  bottom: 0;
+}
+
+.scheme::before {
+  top: 0;
 }
 
 .current-direction a,
@@ -396,18 +441,6 @@ img {
 .scheme {
   position: relative;
   padding: 3em 0 0 0;
-}
-
-.scheme::before {
-  position: absolute;
-  display: block;
-  width: 100%;
-  height: 15px;
-  top: 0;
-  left: 0;
-  background: url("../img/content_line.png") no-repeat 0 0;
-  content: "";
-  z-index: 105;
 }
 
 .medals-box {
@@ -525,7 +558,11 @@ img {
   box-sizing: border-box;
 }
 
-
+.footer-form button:hover {
+  cursor: pointer;
+  color: #dbdbdb;
+  box-shadow: 2px 2px 3px 3px #dbdbdb;
+}
 
 
 /*--------------------------------animation-----------------------------------*/
@@ -619,6 +656,7 @@ img {
   .medals-box {
     width: 100%;
     margin: 0 auto;
+    text-align: center;
   }
 
   .medal {
@@ -648,6 +686,19 @@ img {
     margin: 0.5em 0 0 2.5em;
   }
 
+  .slider-box, .slider-menu {
+    display: inline-block;
+    vertical-align: top;
+    width: 60%;
+    margin: 1em;
+  }
+
+  .slider-menu,
+  .current-direction,
+  .sheme-current {
+    width: 33%;
+  }
+
   .section-big-title:before,
   .section-big-title:after {
     position: absolute;
@@ -668,6 +719,20 @@ img {
     top: 0;
     right: 0;
     background: url("../img/r_line.png") no-repeat 100% 100%;
+  }
+
+  .footer-copy-box,
+  .footer-logo-box,
+  .footer-contacts-box {
+    display: inline-block;
+    vertical-align: top;
+    width: 32%;
+    margin: 0 0.5%;
+    text-align: left;
+  }
+
+  .footer-contacts-box {
+    text-align: center;
   }
 
 }
