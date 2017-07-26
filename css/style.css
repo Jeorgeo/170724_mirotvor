@@ -41,7 +41,8 @@ img {
   margin: 0 auto;
 }
 
-.clearfix::after {
+.clearfix::after,
+.main-navigation ul::after {
   content: "";
   display: table;
   clear: both;
@@ -175,6 +176,12 @@ img {
   text-decoration: none;
   color: #000000;
   font-size: 1.1em;
+}
+
+.box_contacts-phone:hover,
+.box_contacts-mail:hover {
+  color: #792830;
+  text-shadow: 1px 1px #792830;
 }
 
 .box_contacts-phone span {
@@ -337,7 +344,8 @@ img {
   padding: 1em;
   text-transform: uppercase;
   text-decoration: none;
-  font-size: 1.2em;
+  font-size: 1.4em;
+  font-style: italic;
   color: #000000;
   box-sizing: border-box;
   background-color: #a9a9ab;
@@ -368,7 +376,7 @@ img {
 .section-big-title h2 {
   position: relative;
   display: block;
-  width: 90%;
+  width: 100%;
   max-width: 1170px;
   min-height: 70px;
   margin: 1em auto;
@@ -468,17 +476,19 @@ img {
 }
 
 .footer-contacts-box_contacts {
-  display: flex;
+  display: block;
   width: 100%;
+  text-align: center;
 }
 
 .footer-contacts-box .box_contacts-phone,
 .footer-contacts-box .box_contacts-mail {
-    display: flex;
-    justify-content: space-around;
-    width: 45%;
+    display: inline-block;
+    vertical-align: top;
+    width: 250px;
     margin: 0;
     padding: 0;
+    font-size: 1.5em;
 }
 
 .footer-form {
@@ -562,6 +572,63 @@ img {
     width: 70%;
     margin: 0 1.2em;
   }
+
+  .bottom-header {
+    padding: 0;
+  }
+
+  .main-navigation ul {
+    display: table;
+    width: 98%;
+    margin: auto;
+    box-sizing: border-box;
+  }
+
+  .main-navigation li {
+    display: table-cell;
+    vertical-align: middle;
+    width: 19%;
+    min-height: 65px;
+    max-width: 300px;
+    margin: 0 -10px 0 0;
+    padding: 0.5em;
+    text-align: center;
+    border-top: 0;
+    border-bottom: 0;
+    border-right: 5px solid #ffffff;
+    border-left: 5px solid #ffffff;
+    transform: skew(-30deg);
+    box-sizing: border-box;
+  }
+
+  .main-navigation li:nth-child(4) {
+    width: 23%;
+  }
+
+  .main-navigation a {
+    transform: skew(30deg);
+  }
+
+  .current-direction,
+  .sheme-current {
+    float: left;
+    width: 50%;
+    max-width: 350px;
+  }
+
+  .medals-box {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .medal {
+    display: inline-block;
+    width: 48%;
+    max-width: 300px;
+    margin: 1em;
+  }
+
+
 }
 
 /*-------------------------Third - For Tablet 1024px--------------------------*/
