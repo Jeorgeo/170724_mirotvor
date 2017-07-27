@@ -267,8 +267,8 @@ img {
 .slide {
   position: relative;
   display: block;
-  width: 100%;
-  margin: 2em 0;
+  width: 98%;
+  margin: 2em 0 2em 0.5em;
   box-shadow: -0.5em 0.5em 0 0 #a9aaa3;
 }
 
@@ -347,6 +347,11 @@ img {
 .section-title h2 {
   font-style: italic;
   margin: 0;
+}
+
+.mean .section-content {
+  width: 90%;
+  margin: 0 auto;
 }
 
 .mean .section-content p {
@@ -571,6 +576,22 @@ img {
   cursor: pointer;
   color: #dbdbdb;
   box-shadow: 2px 2px 3px 3px #dbdbdb;
+}
+
+.slider .owl-theme .owl-dots .owl-dot span,
+.slider .owl-theme .owl-dots .owl-dot.active span {
+  width: 32px;
+  height: 15px;
+  margin-left: 1em;
+  transform: skew(-40deg);
+  background-color: #e6e6e4;
+  border: 1px solid #d9d9d7;
+  border-radius: 1px;
+}
+
+.slider .owl-theme .owl-dots .owl-dot.active span {
+  background-color: #969593;
+  border: 1px solid #888785;
 }
 
 
@@ -830,6 +851,10 @@ img {
 
   .slider-menu, .current-direction, .sheme-current {
     width: 25%;
+  }
+
+  .slide p {
+    font-size: 1.7em;
   }
 
   .footer-copy-box {
