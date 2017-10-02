@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/2.5/template-install.dtd">
+
+<extension version="3" type="template" client="site" method="upgrade">
+	
+	<name>proliving</name><!-- name the template -->
+	<creationDate>2017-09-06</creationDate><!-- the date your are beginn to code -->
+	<author>Soltan Viorel</author><!-- your name (oops, I repeat myself) -->
+	<authorEmail>joomjoom2011@gmail.com</authorEmail><!-- your email address -->
+	<authorUrl>http://web-devsoltan.com/</authorUrl><!-- your url -->
+	<version>1.0.0</version><!-- give your template a number -->
+	<description><![CDATA[ 
+		<h1>Proliving</h1>
+		<p>Created by <a href="http://web-devsoltan.com/" target="_blank">Soltan Viorel | web-devsoltan.com</a>.</p>
+	]]></description><!-- change the description as you like -->
+	
+	<files><!-- no need to change -->
+		<folder>css</folder>
+		<folder>fonts</folder>
+		<folder>img</folder>
+		<folder>html</folder>
+		<folder>js</folder>
+		<folder>owlcarousel</folder>
+		<filename>component.php</filename>
+		<filename>error.php</filename>
+		<filename>index.php</filename>
+		<filename>logic.php</filename>
+		<filename>offline.php</filename>
+		<filename>template_preview.png</filename>
+		<filename>template_thumbnail.png</filename>
+		<filename>favicon.ico</filename>
+		<filename>templateDetails.xml</filename>
+	</files>
+	
+	<positions><!-- define the positions for modules here -->
+		<position>headBox-left</position>
+		<position>headBox-Lang</position>
+		<position>headBox-Search</position>
+		<position>headBox-Phone</position>
+		<position>Slider</position>
+		<position>slider-menu</position>
+		<position>mainmenu</position>
+		<position>section_mean</position>
+		<position>directions</position>
+		<position>initiative</position>
+		<position>scheme</position>
+		<position>projects</position>
+		<position>footer-left</position>
+		<position>user</position>
+	</positions>
+	
+</extension>

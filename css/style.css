@@ -13,6 +13,7 @@ body {
   position: relative;
   margin: 0;
   padding: 0;
+  letter-spacing: 1px;
   font-family: 'Times New Roman', 'PT Sans';
   z-index: 1;
 }
@@ -81,6 +82,13 @@ img {
 
 .header-title-box p {
   text-transform: uppercase;
+}
+
+.header-title-box p,
+.bottom-header,
+ {
+  font-style: italic;
+  font-weight: bold;
 }
 
 .middle-header::before,
@@ -747,8 +755,6 @@ img {
     font-size: 1.6em;
     font-style: italic;
   }
-
-
 }
 
 /*-------------------------Third - For Tablet 1024px--------------------------*/
@@ -825,16 +831,17 @@ img {
   .footer-contacts-box {
     text-align: center;
   }
-
 }
-
-
 
 /*-------------------------Third - For Tablet 1360px--------------------------*/
 /*-------------------------------index.html-----------------------------------*/
 
 
 @media screen and (min-width: 1360px) {
+  .header-title-box{
+    padding: 1em 10%;
+  }
+
   .header-title-box p {
     font-size: 1.2em;
   }
@@ -858,9 +865,9 @@ img {
   }
 
   .footer-copy-box {
-    width: 28%;
+    width: 34%;
     margin-left: 2%;
-    margin-right: 10%;
+    margin-right: 4%;
     padding-right: 2.5em;
     font-size: 1.4em;
     box-sizing: border-box;
@@ -874,7 +881,10 @@ img {
     width: 37%;
   }
 
-
+  .control-group {
+    display: inline-block;
+    width: 240px;
+  }
 }
 
 /*-------------------------Third - For Tablet 1920px--------------------------*/
